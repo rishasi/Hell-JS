@@ -59,6 +59,29 @@ $ npm run start
 Hello JS
 ```
 
+### 4. Configuring Unit Test with Jest
+
+```bash
+$ npm install --save-dev jest
+```
+
+​		`package.json` updated:
+
+```diff
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
++  "devDependencies": {
++    "jest": "^26.6.3"   
+  }
+}
+```
+
+
+
 
 
 
