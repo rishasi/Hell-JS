@@ -82,7 +82,52 @@ $ npm install --save-dev jest
 
 
 
+---
+
+### Starting Code Notes:
+
+Function, variables, function in function, returning functions in functions:
+
+```javascript
+console.log("Hello JS");
+
+// Create variable in JS
+const one = "one";
+let two = "two";
+
+// Creating function
+function sayHello(name){
+    console.log("Hello " + name);
+    function sayTitle(title) {
+        console.log("Title: " + title);
+    }
+    return sayTitle;
+}
+
+const firstFunction = sayHello;
+const returnedFunction = firstFunction();
+returnedFunction("Singh");
+
+sayHello("Rishabh");
+
+// Declaring functions with Lambda
+// Functions are also types
+
+const sayMyName = (name) => {
+    console.log("Hello lambda " + name);
+}
+
+sayMyName("Rishabh");
 
 
+// Output:
+Hello JS
+Hello undefined
+Title: Singh
+Hello Rishabh
+Hello lambda Rishabh
 
+```
+
+In JavaScript, functions can be passed on and can have operations like an onject, varible in Java.
 
